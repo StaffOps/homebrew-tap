@@ -1,0 +1,32 @@
+# Backstage catalog: Domain (GitHub org) -> System (this repo) -> Component(s).
+# Names aligned with Dependency-Track (StaffOps/homelab-gitops helm-charts/argo-events/image-scan/catalog.yaml).
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: homebrew-tap
+  title: homebrew-tap
+  description: "Homebrew tap for StaffOps tools"
+  annotations:
+    github.com/project-slug: StaffOps/homebrew-tap
+  links:
+    - url: https://github.com/StaffOps/homebrew-tap
+      title: Repository
+      icon: github
+spec:
+  owner: group:staffops
+  domain: staffops
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: homebrew-tap
+  title: homebrew-tap
+  description: "Homebrew tap for StaffOps tools"
+  annotations:
+    github.com/project-slug: StaffOps/homebrew-tap
+  tags: [ruby]
+spec:
+  type: library
+  lifecycle: production
+  owner: group:staffops
+  system: homebrew-tap
