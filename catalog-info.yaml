@@ -8,6 +8,7 @@ metadata:
   description: "Homebrew tap for StaffOps tools"
   annotations:
     github.com/project-slug: StaffOps/homebrew-tap
+  tags: [homebrew, ruby]
   links:
     - url: https://github.com/StaffOps/homebrew-tap
       title: Repository
@@ -24,7 +25,7 @@ metadata:
   description: "Homebrew tap for StaffOps tools"
   annotations:
     github.com/project-slug: StaffOps/homebrew-tap
-  tags: [ruby]
+  tags: [ruby, homebrew]
 spec:
   type: library
   lifecycle: production
